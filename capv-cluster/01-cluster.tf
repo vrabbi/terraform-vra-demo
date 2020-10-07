@@ -30,7 +30,7 @@ resource "kubernetes_manifest" "cluster" {
   }
   wait_for = {
     fields = {
-      "Status.Conditions[0].Status" = "True"
+      "status.conditions[0].status" = "True"
     }
   }
 }
