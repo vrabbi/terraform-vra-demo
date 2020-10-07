@@ -1,12 +1,12 @@
 provider "kubernetes-alpha" {
-  config_path = "~/.kube/config"
+  load_config_file = "false"
   server_side_planning = true
 }
 provider "kubectl" {
-  config_path = "~/.kube/config"
+  load_config_file = "false"
 }
 provider "kubernetes" {
-  config_path = "~/.kube/config"
+  load_config_file = "false"
 }
 terraform {
   required_version = ">= 0.13"
